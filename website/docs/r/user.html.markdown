@@ -16,7 +16,7 @@ Provides a Incapsula SubAccount resource.
 resource "incapsula_user" "example-user" {
   email             = "test@test.com"
   account_id        = "1190270"
-  role_names        = ["Reader"]
+  role_names        = ["11"]
   first_name        = "first"
   last_name         = "last"
 }
@@ -30,11 +30,13 @@ The following arguments are supported:
 * `account_id` - (Required) Unique ID of the required account . example: 123456.
 * `first_name` - (Optional) The first name of the user that was acted on. example: `John`.
 * `last_name` - (Optional) The last name of the user that was acted on. example: `Snow`.
-* `role_names` - (Optional) List of role names to add to the user. for example : [`Reader`].
+* `role_ids` - (Optional) List of role ids to add to the user. for example : [`11`].
 
 ## Attributes Reference
 
 The following attributes are exported:
 
 * `id` - Unique identifier in the API for the User.
+
+* `role_names` - "List of role names..
 
